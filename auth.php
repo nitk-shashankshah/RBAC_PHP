@@ -33,7 +33,7 @@ if($rawBody != "") {
   }
 
 	if(!$auth) {
-		echo '{"user":"'.$email.'","role":"'.$roleName.'", "auth":"0"}';
+		echo '{"user":"'.$email.'", "auth":"0"}';
 	}
 } else {
 		echo '{"user":"none", "auth":"0"}';
