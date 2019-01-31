@@ -7,7 +7,7 @@ $dt->connect();
 // Was the form submitted?
 $rawBody = file_get_contents("php://input"); // Read body
 
-if($rawBody != "" && isset($_SESSION['login_user']) {
+if($rawBody != "" && isset($_SESSION['login_user'])) {
     $data = json_decode($rawBody);
     $email = $data->email;
     $password = $data->password;
